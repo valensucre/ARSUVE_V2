@@ -4,102 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARSUVE</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Boostrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header-->
     <header>
-      <img src="https://arsuve.com/images/logo.png" />
-    
-      <a href="index.html" class="Lineup">INICIO</a>
-      <a href="nosotros.html" class="Lineup">NOSOTROS</a>
-      <a href="servicios.html"class="Lineup">SERVICIOS</a>
-      <a href="nuestrassedes.html" class="Lineup">NUESTRAS SEDES</a>
-      <a href="contacto.html" class="Lineup">CONTACTO</a>
-    </div>
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          d-flex
+          justify-content-center
+          w-100
+          align-items-center
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="https://arsuve.com/images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100">
+              <a class="nav-link text-light" href="#">INICIO</a>
+              <a class="nav-link text-light" href="nosotros.html">NOSOTROS</a>
+              <a class="nav-link text-light" href="servicios.html">SERVICIOS</a>
+              <a class="nav-link text-light" href="nuestrassedes.html"
+                >NUESTRAS SEDES</a
+              >
+              <a class="nav-link text-light" href="contacto.html">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+    <!--Fin header-->
     <main>
-     
-    
-      <div class="ContainerIndex"> 
-        <!--Photo Carrousel TBD--> 
-<div class="Carrusel--Foto">
-  <img src="Cover.jpg" alt="">
-</div>
-<div class="Carrusel--Texto">
- <p class="Section1--Titles"> <span> ARSUVE, mas de 25 años prestando servicio de calidad a nuestros pacientes oncologicos</span>
-  <br><br>
-  Nuestra misión es contribuir al tratamiento y cuidado de las personas con cáncer y hacer prevención e investigación clínica en el área de oncología médica en Venezuela.
-</p>
-</div>
-
-
-
-      <a href="serviciosQuimioEInmuno.html" class="contentIndex"> QUIMIOTERAPIA E INMUNOTERAPIA</a>
-      <a href="serviciosTratamientos.html" class="contentIndex2" > TRATAMIENTOS</a>
-      <a href="serviciosFamiliaPcteOnc.html" class="contentIndex3"> FAMILIA DEL PACIENTE ONCOLOGICO</a>
-      <a href="#" class="contentIndex4">TIEMPOS DE COVID-19</a>
-  
-    </div>
-    
-     <br><br><br><br><br> 
-    
-    <!--Contact Info-->
-    <div class="contentContact">
-      <h1 class="Section1--Titles">Contactanos</h1>
-      <div class="contact-wrapper">
-        <div class="contact-formulario">
-          <form action="">
-            <p>
-              <label for="Nombre">Nombre y Apellido</label>
-              <input type="text" name="Nombre" id="Nombre" class="form" />
-            </p>
-            <p>
-              <label for="email">Correo Electronico</label>
-              <input type="email" name="email" id="email" class="form" />
-            </p>
-            <p>
-              <label for="phonenumber">Telefono de Contacto</label>
-              <input
-                type="phonenumber"
-                name="phonenumber"
-                id="phonenumber"
-                class="form"
-              />
-            </p>
-            <p>
-              <label for="affair">Asunto</label>
-              <input type="text" name="affair" class="form" />
-            </p>
-            <p>
-              <label for="message">Comentarios</label>
-              <textarea name="message" rows="3" class="form"></textarea>
-            </p>
-            <button type="submit" class="form">Enviar</button>
-          </form>
+      <!--Carrusel -->
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="Fotos/Cover.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="Fotos/salud.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="Fotos/clinica.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="contact-info">
-          <h4>Informacion Adicional</h4>
-          <ul>
-            <li>Centro Medico Docente de la Trinidad</li>
-            <li>Instituto Medico la Floresta</li>
-            <li>Numero de Telefono</li>
-            <li>Correo Electronico</li>
-          </ul>
-          <p>ARSUVE SC</p>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- texto aun pensando donde y como ponerlo 
+        <div class="Container">
+          <p>
+            <span>
+              ARSUVE, mas de 25 años prestando servicio de calidad a nuestros
+              pacientes oncologicos</span
+            >
+            <br /><br />
+            Nuestra misión es contribuir al tratamiento y cuidado de las
+            personas con cáncer y hacer prevención e investigación clínica en el
+            área de oncología médica en Venezuela.
+          </p>
+        </div> -->
+        <!--Fin Carrusel -->
+
+        <!--Section 1-->
+        <div class="container w-100">
+          <div class="row">
+            <div class="col">
+        <a href="serviciosQuimioEInmuno.html" class="contentIndex">
+          QUIMIOTERAPIA E INMUNOTERAPIA</a
+        >
+      </div>
+      <div class="col
+      ">
+        <a href="serviciosTratamientos.html" class="contentIndex2">
+          TRATAMIENTOS</a
+        >
+      </div>
+      <div class="col">
+        <a href="serviciosFamiliaPcteOnc.html" class="contentIndex3">
+          FAMILIA DEL PACIENTE ONCOLOGICO</a
+        >
+      </div>
+      <div class="col">
+        <a href="#" class="contentIndex4">TIEMPOS DE COVID-19</a>
+      </div>
+      </div>
       </div>
     </div>
+<!--Fin Section 1-->
+
+
+      <!--Formulario de Contacto-->
+      
+      <div class="container align-items-center">
+        <h1>Contactanos</h1>
+        <form>
+          
+            <div class="row flex-row">
+            
+              <div class="form-group col-md-6 col-lg-4">
+                <label for="Nombre">Nombre y Apellido</label>
+                <input type="text" name="Nombre" id="Nombre" class="form-control" />
+              </div>
+              <div class="form-group col-md-6 col-lg-4">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" class="form-control" />
+              </div>
+            </div>
+            <div class="row flex-row">
+              <div class="form-group col-md-6 col-lg-4">
+                <label for="phonenumber">Telefono de Contacto</label>
+                <input
+                  type="phonenumber"
+                  name="phonenumber"
+                  id="phonenumber"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group col-md-6 col-lg-4">
+                <label for="affair">Asunto</label>
+                <input type="text" name="affair" class="form-control" />
+              </div>
+            </div>
+              <div class="form-group col-md-6 col-lg-8">
+                <label for="message">Comentarios</label>
+                <textarea name="message" rows="3" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="form-group col-md-6 col-lg-2 mt-4">Enviar</button>
+            </form>
+          </div>
+
+            <!--Fin del formulario de Contacto-->
     </main>
     <!--Footer-->
     <footer>
-      Informacion del Copyright
+      <div class="container navbar">Informacion del Copyright</div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

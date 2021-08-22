@@ -46,7 +46,7 @@ body {
 
 main {
   margin: top 50%;
-  margin-bottom: 50%;
+  margin-bottom: 10%;
   margin-left: 0%;
   margin-right: 0%;
   padding: 3rem;
@@ -117,6 +117,10 @@ main {
 span {
   font-weight: bolder;
 }
+.col {
+  height: 300px;
+  margin-top: 80px;
+}
 .contentIndex {
   display: flex;
   flex-direction: row;
@@ -131,9 +135,9 @@ span {
   font-weight: bold;
   padding: 60px;
   height: 235px;
-  width: 235px;
+
   transition: all 0.5s ease-in;
-  background-image: url(Quimioterapia.jpg);
+  background-image: url(Fotos/Quimioterapia.jpg);
   filter: grayscale(1.5);
   background-size: cover;
 }
@@ -150,9 +154,9 @@ span {
   font-weight: bold;
   padding: 60px;
   height: 235px;
-  width: 235px;
+
   transition: all 0.5s ease-in;
-  background-image: url(treatment.jpg);
+  background-image: url(Fotos/treatment.jpg);
   filter: grayscale(1);
   background-size: cover;
 }
@@ -169,9 +173,9 @@ span {
   font-weight: bold;
   padding: 60px;
   height: 235px;
-  width: 235px;
+
   transition: all 0.5s ease-in;
-  background-image: url(Familia.jpg);
+  background-image: url(Fotos/Familia.jpg);
   filter: grayscale(1.5);
   background-size: cover;
 }
@@ -189,9 +193,9 @@ span {
   font-weight: bold;
   padding: 60px;
   height: 235px;
-  width: 235px;
+
   transition: all 0.5s ease-in;
-  background-image: url(covid.jpeg);
+  background-image: url(Fotos/covid.jpeg);
   filter: grayscale(1.5);
   background-size: cover;
 }
@@ -341,7 +345,7 @@ span {
   list-style-type: none;
   text-align: left;
 }
-.button {
+button {
   background-color: rgb(2, 125, 182);
   border: none;
   color: white;
@@ -510,4 +514,7 @@ footer {
   background-color: rgb(0, 96, 141);
   color: white;
   text-align: center;
+  position: inherit;
+  width: 100%;
+  height: 2.5rem;
 }
