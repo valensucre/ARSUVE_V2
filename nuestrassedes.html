@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARSUVE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,18 +22,50 @@
     />
   </head>
   <body>
-    <!--Header-->
+    <!-- Header-->
     <header>
-      <img src="https://arsuve.com/images/logo.png" alt="" />
-      <a href="index.html" class="Lineup">INICIO</a>
-      <a href="nosotros.html" class="Lineup">NOSOTROS</a>
-      <a href="servicios.html" class="Lineup">SERVICIOS</a>
-      <a href="nuestrassedes.html" class="Lineup">NUESTRAS SEDES</a>
-      <a href="contacto.html" class="Lineup">CONTACTO</a>
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          d-flex
+          justify-content-center
+          w-100
+          align-items-center
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="https://arsuve.com/images/logo.png" alt="ARSUVE" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav w-100">
+              <a class="nav-link text-light" href="index.html">INICIO</a>
+              <a class="nav-link text-light" href="nosotros.html">NOSOTROS</a>
+              <a class="nav-link text-light" href="servicios.html">SERVICIOS</a>
+              <a class="nav-link text-light" href="nuestrassedes.html"
+                >NUESTRAS SEDES</a
+              >
+              <a class="nav-link text-light" href="contacto.html">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+    <!--Fin header-->
     <main>
       <!--Located-->
-      <div class="containerSedes">
+      <div class="container">
         <div class="contentSedes">
           <h1 class="Titulos">¿Donde nos puedes encontrar?</h1>
           <br />
@@ -75,5 +113,10 @@
 
     <!--Footer-->
     <footer>Informacion del Copyright</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

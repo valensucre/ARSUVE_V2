@@ -33,6 +33,7 @@ header {
   background: rgb(0, 85, 130);
   color: white;
 }
+/* Fin del Header */
 /* Body */
 
 body {
@@ -41,7 +42,7 @@ body {
   font-family: "Lato", sans-serif;
   width: 100%;
 }
-
+/* Fin del Body */
 /* Main */
 
 main {
@@ -74,6 +75,7 @@ main {
   text-indent: 2rem;
   padding-bottom: 5px;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .Text {
@@ -83,6 +85,7 @@ main {
   word-spacing: 0.2rem;
   letter-spacing: normal;
 }
+/* Fin de Main */
 /* Index */
 
 .ContainerIndex {
@@ -231,20 +234,11 @@ span {
   font-weight: bold;
   text-decoration: none;
 }
-
+/* Fin del Index */
 /* Nosotros */
-
-.NosotrosContainer {
-  width: 100%;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 50px;
-  grid-template-columns: repeat(6, 1fr);
-}
 
 .Content {
   padding: 20px;
-
   grid-column: span 5;
 }
 
@@ -255,7 +249,7 @@ span {
   background: white;
   border: 5px solid rgb(240, 240, 240);
   line-height: 50px;
-  margin-bottom: 275%;
+  margin-bottom: auto;
   margin-right: auto;
   margin-top: 8%;
 }
@@ -278,18 +272,11 @@ span {
   padding: 1rem;
   list-style: square;
   text-align: center;
-  line-height: 25px;
+  line-height: 20px;
 }
+/* Fin del Nosotros */
 
 /* Servicios */
-
-.servicesContainer {
-  width: 90%;
-  margin-bottom: 20%;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .servicesContent {
   display: flex;
@@ -306,18 +293,12 @@ span {
 }
 
 .section1 {
-  justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  background-image: linear-gradient(to bottom, rgb(192, 192, 192), white);
   border: 5px solid rgb(235, 235, 235);
-  padding: 60px;
-  display: flex;
+  background: white;
+  padding: 50px;
 }
 
-.section2 {
+/*.section2 {
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -339,7 +320,7 @@ span {
   border: 5px solid rgb(235, 235, 235);
   padding: 60px;
   display: flex;
-}
+}*/
 
 .listServices {
   list-style-type: none;
@@ -357,13 +338,25 @@ button {
   border-radius: 8px;
   transition: all 0.5s ease;
 }
+.button {
+  background-color: rgb(2, 125, 182);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
 
 .button:hover {
   cursor: pointer;
   color: rgb(0, 96, 141);
   background: white;
 }
-
+/* Fin de Servicios */
 /* Servicio Quimio e Inmuno*/
 
 .containerQuimio {
@@ -388,7 +381,7 @@ button {
   cursor: initial;
   background: rgb(230, 230, 230);
 }
-
+/* Fin de Servicio Quimio e Inmuno*/
 /* Servicio Tratamientos*/
 
 .containerTreatment {
@@ -413,7 +406,7 @@ button {
   cursor: initial;
   background: rgb(230, 230, 230);
 }
-
+/* Fin de Servicio Tratamientos*/
 /* Servicio Pcte Oncologico*/
 
 .containerPaciente {
@@ -442,16 +435,16 @@ button {
   list-style-type: decimal;
   font-size: 15px;
 }
-
+/* Fin de Servicio Pcte Oncologico*/
 /* Nuestras Sedes*/
 
-.containerSedes {
+/*.containerSedes {
   display: grid;
   width: 80%;
   margin-left: 6%;
   gap: 50px;
 }
-
+*/
 .contentSedes {
   display: flex;
   flex-direction: column;
@@ -466,6 +459,7 @@ button {
   cursor: initial;
   background: rgb(230, 230, 230);
 }
+/* Fin de Nuestras Sedes*/
 /* Contacto */
 
 fieldset {
@@ -508,6 +502,7 @@ fieldset {
   background: white;
   border: 5px solid rgb(235, 235, 235);
 }
+/* Fin de Contacto */
 /* Footer*/
 
 footer {

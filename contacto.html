@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARSUVE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,63 +22,106 @@
     />
   </head>
   <body>
-    <!--Header-->
+    <!-- Header-->
     <header>
-      <img src="https://arsuve.com/images/logo.png" alt="" />
-      <a href="index.html" class="Lineup">INICIO</a>
-      <a href="nosotros.html" class="Lineup">NOSOTROS</a>
-      <a href="servicios.html" class="Lineup">SERVICIOS</a>
-      <a href="nuestrassedes.html" class="Lineup">NUESTRAS SEDES</a>
-      <a href="contacto.html" class="Lineup">CONTACTO</a>
-    </header>
-    <main>
-      <div class="contentContact">
-        <h1 class="Section1--Titles">Contactanos</h1>
-        <div class="contact-wrapper">
-          <div class="contact-formulario">
-            <form action="">
-              <p>
-                <label for="Nombre">Nombre y Apellido</label>
-                <input type="text" name="Nombre" id="Nombre" class="form" />
-              </p>
-              <p>
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="email" id="email" class="form" />
-              </p>
-              <p>
-                <label for="phonenumber">Telefono de Contacto</label>
-                <input
-                  type="phonenumber"
-                  name="phonenumber"
-                  id="phonenumber"
-                  class="form"
-                />
-              </p>
-              <p>
-                <label for="affair">Asunto</label>
-                <input type="text" name="affair" class="form" />
-              </p>
-              <p>
-                <label for="message">Comentarios</label>
-                <textarea name="message" rows="3" class="form"></textarea>
-              </p>
-              <button type="submit" class="form">Enviar</button>
-            </form>
-          </div>
-          <div class="contact-info">
-            <h4>Informacion Adicional</h4>
-            <ul>
-              <li>Centro Medico Docente de la Trinidad</li>
-              <li>Instituto Medico la Floresta</li>
-              <li>Numero de Telefono</li>
-              <li>Correo Electronico</li>
-            </ul>
-            <p>ARSUVE SC</p>
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          d-flex
+          justify-content-center
+          w-100
+          align-items-center
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="https://arsuve.com/images/logo.png" alt="ARSUVE" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav w-100">
+              <a class="nav-link text-light" href="index.html">INICIO</a>
+              <a class="nav-link text-light" href="nosotros.html">NOSOTROS</a>
+              <a class="nav-link text-light" href="servicios.html">SERVICIOS</a>
+              <a class="nav-link text-light" href="nuestrassedes.html"
+                >NUESTRAS SEDES</a
+              >
+              <a class="nav-link text-light" href="contacto.html">CONTACTO</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+    <!--Fin header-->
+    <main>
+      <!--Formulario de Contacto-->
+
+      <div class="container align-items-center">
+        <h1>Contactanos</h1>
+        <form>
+          <div class="row flex-row">
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="Nombre">Nombre y Apellido</label>
+              <input
+                type="text"
+                name="Nombre"
+                id="Nombre"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="email">Correo Electronico</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row flex-row">
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="phonenumber">Telefono de Contacto</label>
+              <input
+                type="phonenumber"
+                name="phonenumber"
+                id="phonenumber"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group col-md-6 col-lg-4">
+              <label for="affair">Asunto</label>
+              <input type="text" name="affair" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group col-md-6 col-lg-8">
+            <label for="message">Comentarios</label>
+            <textarea name="message" rows="3" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="form-group col-md-6 col-lg-2 mt-4">
+            Enviar
+          </button>
+        </form>
       </div>
+
+      <!--Fin del formulario de Contacto-->
     </main>
     <!--Footer-->
     <footer>Informacion del Copyright</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

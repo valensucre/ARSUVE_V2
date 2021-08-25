@@ -5,85 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARSUVE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-<!-- Header-->
+    <!-- Header-->
     <header>
-      <img src="https://arsuve.com/images/logo.png" alt="" />
-      <a href="index.html" class="Lineup">INICIO</a>
-      <a href="nosotros.html" class="Lineup">NOSOTROS</a>
-      <a href="servicios.html"class="Lineup">SERVICIOS</a>
-      <a href="nuestrassedes.html" class="Lineup">NUESTRAS SEDES</a>
-      <a href="contacto.html" class="Lineup">CONTACTO</a>
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          d-flex
+          justify-content-center
+          w-100
+          align-items-center
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="https://arsuve.com/images/logo.png" alt="ARSUVE" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav w-100">
+              <a class="nav-link text-light" href="index.html">INICIO</a>
+              <a class="nav-link text-light" href="nosotros.html">NOSOTROS</a>
+              <a class="nav-link text-light" href="servicios.html">SERVICIOS</a>
+              <a class="nav-link text-light" href="nuestrassedes.html"
+                >NUESTRAS SEDES</a
+              >
+              <a class="nav-link text-light" href="contacto.html">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+    <!--Fin header-->
 
-    <main class="servicesContainer">
+    <main>
+      <div class="container w-100">
+        <!--Parrafo-->
+        <div class="servicesContent">
+          <h1>¿Cuales son los servicios que ofrecemos en ARSUVE?</h1>
+          <p class="Text">
+            Arsuve ofrece la siguiente variedad de servicios en relación al
+            tratamiento onclógico:
+          </p>
 
-<div class="servicesContent">
-  <h3 class="Section1--Titles">¿Cuales son los servicios que ofrecemos en ARSUVE?</h3>
-  <p class="Text">
-      Arsuve ofrece la siguiente variedad de servicios en relación al tratamiento onclógico:	 <br><br>
-<ul>
-<li class="List">Servicio de Detección y Diagnostico del Cáncer, chequeos y descartes oncológicos y educación médico-preventiva.	 </li>
-<li class="List">Alianza estrategica con Servicio de Radioterapia GURVE 	 </li>
-<li class="List">Servicios de Quimioterapia e Inmunoterapia, en nuestro centro de atención integral al Paciente.</li>
-<li class="List">Soporte Psico-Oncológico, el cual contribuye con el tratamiento integral del paciente con cáncer.</li> <br>
+          <ul>
+            <li class="List">
+              Servicio de Detección y Diagnostico del Cáncer, chequeos y
+              descartes oncológicos y educación médico-preventiva.
+            </li>
+            <li class="List">
+              Alianza estrategica con Servicio de Radioterapia GURVE
+            </li>
+            <li class="List">
+              Servicios de Quimioterapia e Inmunoterapia, en nuestro centro de
+              atención integral al Paciente.
+            </li>
+            <li class="List">
+              Soporte Psico-Oncológico, el cual contribuye con el tratamiento
+              integral del paciente con cáncer.
+            </li>
+          </ul>
 
-</ul>
+          <p class="Text">
+            Adicionalmente, nuestros pacientes oncologicos cuentan con apoyo de
+            nutricion, ginecologia, hematologia y reumatologia de necesitarlo
+          </p>
+        </div>
+        <!--Fin del Parrafo-->
+        <!--Servicios-->
+        <div class="row p-3">
+          <div class="col section1">
+            <ul class="list-unstyled text-center">
+              <h3 class="mb-3 text-center">Quimioterapia e Inmunoterapia</h3>
 
-<p class="Text">
-Adicionalmente, nuestros pacientes oncologicos cuentan con apoyo de nutricion, ginecologia, hematologia y reumatologia de necesitarlo </p>
-<br><br>
-    
-    </div>
+              <li>Informacion</li>
+              <li>Frecuencia</li>
+              <li>Administracion</li>
 
-<div class="section1">
-  <ul class="listServices">
-<h3 class="services--subtitles">QUIMIOTERAPIA E INMUNOTERAPIA</h3> <br>
-    <li>Informacion</li>
-    <li>Frecuencia</li>
-    <li>Administracion</li> <br>
-    <a href="serviciosQuimioEInmuno.html" class="button">Leer Mas</a>
-  </ul>
-</div>
-<!--Treatments-->
-<div class="section2">
-  <ul class="listServices">
-    <h3 class="services--subtitles">TRATAMIENTOS</h3> <br>
-    <li>Informacion</li>
-    <li>Sintomas</li>
-    <li>Terapias</li>
-    <li>Prevencion</li> <br>
-    <a href="serviciosTratamientos.html" class="button">Leer Mas</a>
-  </ul>
-</div>
-  
-<!--Info for family-->
-<div class="section3">
-  <ul class="listServices">
-  <h3 class="services--subtitles">LA FAMILIA DEL PACIENTE ONCOLOGICO</h3> <br>
-  
-  <li>Paciente Oncologico</li>
-  <li>Necesidades del Paciente</li>
-  <li>Terapias de Apoyo</li> <br>
-  <a href="serviciosFamiliaPcteOnc.html" class="button">Leer Mas</a>
-</ul>
-</p>
-</div>
-</div>
-</div>
+              <a href="serviciosQuimioEInmuno.html" class="button mt-2"
+                >Leer Mas</a
+              >
+            </ul>
+          </div>
+          <div class="col section1">
+            <ul class="list-unstyled text-center">
+              <h3 class="mb-3 text-center">Tratamientos</h3>
 
-</main>
+              <li class="text-decoration-none">Informacion</li>
+              <li>Sintomas</li>
+              <li>Terapias</li>
+              <li>Prevencion</li>
 
-<!--Footer-->
-    <footer>
-      Informacion del Copyright
-    </footer>
+              <a href="serviciosTratamientos.html" class="button mt-3"
+                >Leer Mas</a
+              >
+            </ul>
+          </div>
+          <div class="col section1">
+            <ul class="list-unstyled text-center">
+              <h3 class="mb-3 text-center">Familia del Paciente Oncologico</h3>
+              <li>Paciente Oncologico</li>
+              <li>Necesidades del Paciente</li>
+              <li>Terapias de Apoyo</li>
+
+              <a href="serviciosFamiliaPcteOnc.html" class="button mt-2"
+                >Leer Mas</a
+              >
+            </ul>
+          </div>
+        </div>
+        <!--Fin de Servicios-->
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer>Informacion del Copyright</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
