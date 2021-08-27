@@ -1,0 +1,50 @@
+/*servicios*/
+
+.servicesContent {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+  background: $color-secundario;
+  border: 5px solid $color-bordes;
+  padding: 80px;
+
+  &__Text {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 5px;
+    word-spacing: 0.2rem;
+    letter-spacing: normal;
+  }
+  &__List {
+    list-style-type: none;
+    text-indent: 2rem;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+.ServicesSection {
+  border: 5px solid $color-bordes;
+  background: $color-secundario;
+  padding: 50px;
+}
+
+.button {
+  background-color: rgb(2, 125, 182);
+  border: none;
+  color: $color-secundario;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  cursor: pointer;
+  color: rgb(2, 125, 182);
+  background: $color-secundario;
+}
+/*Fin de Servicios*/

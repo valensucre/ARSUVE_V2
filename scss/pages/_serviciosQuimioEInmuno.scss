@@ -1,0 +1,31 @@
+/*Quimioterapia e Inmunoterapia */
+
+.contentQuimio {
+  display: flex;
+  flex-direction: column;
+  background: $color-secundario;
+  border: 5px solid $color-bordes;
+  padding: 80px;
+  gap: 10px;
+  word-spacing: normal;
+  transition: all 0.5s ease;
+
+  &__Subtitles {
+    font-size: 1.5rem;
+    text-align: left;
+    font-style: normal;
+  }
+  &__Text {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 5px;
+    word-spacing: 0.2rem;
+    letter-spacing: normal;
+  }
+}
+.contentQuimio:hover {
+  cursor: initial;
+  background: $color-hover;
+}
+
+/*Fin de Quimioterapia e Inmunoterapia */

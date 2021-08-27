@@ -1,0 +1,36 @@
+/*Nosotros*/
+
+.NosotrosSection {
+  text-align: justify;
+  padding: 80px;
+  word-spacing: normal;
+  line-height: 25px;
+  background: $color-secundario;
+  border: 5px solid $color-bordes;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+.NosotrosSection:hover {
+  cursor: initial;
+  background: $color-hover;
+}
+.sidebar {
+  padding: 20px;
+  border: none;
+  grid-column: span 1;
+  background: $color-secundario;
+  border: 5px solid $color-bordes;
+  line-height: 50px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  transition: all 0.5s ease;
+}
+
+.sidebar:hover {
+  cursor: initial;
+  background: $color-hover;
+}
+
+/*Fin de Nosotros*/
