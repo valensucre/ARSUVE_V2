@@ -5,10 +5,12 @@
   flex-direction: column;
   background: $color-secundario;
   border: 5px solid $color-bordes;
+  border-radius: 1 * $root-size;
   padding: 80px;
   word-spacing: normal;
   gap: 10px;
   transition: all 0.5s ease;
+  color: $color-primario;
 
   &__Subtitles {
     font-size: 1.5rem;
@@ -27,6 +29,7 @@
 .contentTreatment:hover {
   cursor: initial;
   background: $color-hover;
+  color: $color-texto-hover;
 }
 
 /*Fin de Tratamientos*/

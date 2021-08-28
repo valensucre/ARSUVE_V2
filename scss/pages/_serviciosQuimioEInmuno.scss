@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   background: $color-secundario;
-  border: 5px solid $color-bordes;
   padding: 80px;
+  border: 5px solid $color-bordes;
+  border-radius: 1 * $root-size;
   gap: 10px;
   word-spacing: normal;
   transition: all 0.5s ease;
+  color: $color-primario;
 
   &__Subtitles {
     font-size: 1.5rem;
@@ -26,6 +28,7 @@
 .contentQuimio:hover {
   cursor: initial;
   background: $color-hover;
+  color: $color-texto-hover;
 }
 
 /*Fin de Quimioterapia e Inmunoterapia */

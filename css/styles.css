@@ -20,7 +20,11 @@ main {
   font-size: 2rem;
   text-align: center;
   font-style: normal;
-  padding: 20px; }
+  font-weight: bold;
+  padding: 20px;
+  background-color: white;
+  border: #ebebeb;
+  border-radius: 1rem; }
 
 header {
   position: relative;
@@ -46,7 +50,8 @@ footer {
 .nav-link:hover {
   cursor: pointer;
   background: #005582;
-  color: white; }
+  color: white;
+  border-radius: 1rem; }
 
 /*Section 1*/
 .content {
@@ -58,7 +63,7 @@ footer {
   height: 235px;
   background-color: lightgray;
   color: #00608d;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: all 0.5s ease-in; }
 
 .content:hover {
@@ -95,13 +100,16 @@ button:hover {
   line-height: 25px;
   background: white;
   border: 5px solid #ebebeb;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  color: #00608d; }
 
 .NosotrosSection:hover {
   cursor: initial;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  color: black; }
 
 .sidebar {
   padding: 20px;
@@ -109,15 +117,18 @@ button:hover {
   grid-column: span 1;
   background: white;
   border: 5px solid #ebebeb;
+  border-radius: 1rem;
   line-height: 50px;
   margin-bottom: auto;
   margin-right: auto;
   margin-top: 8%;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  color: #00608d; }
 
 .sidebar:hover {
   cursor: initial;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  color: black; }
 
 /*Fin de Nosotros*/
 /*servicios*/
@@ -127,7 +138,10 @@ button:hover {
   grid-column: span 3;
   background: white;
   border: 5px solid #ebebeb;
-  padding: 80px; }
+  border-radius: 1rem;
+  padding: 80px;
+  transition: all 0.5s ease;
+  color: #00608d; }
   .servicesContent__Text {
     text-align: justify;
     font-size: 1rem;
@@ -141,10 +155,25 @@ button:hover {
     font-size: 1rem;
     text-align: justify; }
 
+.servicesContent:hover {
+  cursor: initial;
+  background: #e6e6e6;
+  color: black; }
+
 .ServicesSection {
   border: 5px solid #ebebeb;
-  background: white;
-  padding: 50px; }
+  padding: 50px;
+  background-color: lightgray;
+  color: #00608d;
+  border-radius: 1.5rem;
+  transition: all 0.5s ease-in; }
+
+.ServicesSection:hover {
+  cursor: pointer;
+  color: lightgray;
+  background-color: #00608d;
+  transform: scale(1);
+  font-weight: bold; }
 
 .button {
   background-color: #027db6;
@@ -160,8 +189,8 @@ button:hover {
 
 .button:hover {
   cursor: pointer;
-  color: #027db6;
-  background: white; }
+  color: #00608d;
+  background: lightgray; }
 
 /*Fin de Servicios*/
 /*Quimioterapia e Inmunoterapia */
@@ -169,11 +198,13 @@ button:hover {
   display: flex;
   flex-direction: column;
   background: white;
-  border: 5px solid #ebebeb;
   padding: 80px;
+  border: 5px solid #ebebeb;
+  border-radius: 1rem;
   gap: 10px;
   word-spacing: normal;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  color: #00608d; }
   .contentQuimio__Subtitles {
     font-size: 1.5rem;
     text-align: left;
@@ -187,7 +218,8 @@ button:hover {
 
 .contentQuimio:hover {
   cursor: initial;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  color: black; }
 
 /*Fin de Quimioterapia e Inmunoterapia */
 /*Tratamientos*/
@@ -196,10 +228,12 @@ button:hover {
   flex-direction: column;
   background: white;
   border: 5px solid #ebebeb;
+  border-radius: 1rem;
   padding: 80px;
   word-spacing: normal;
   gap: 10px;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  color: #00608d; }
   .contentTreatment__Subtitles {
     font-size: 1.5rem;
     text-align: left;
@@ -213,15 +247,18 @@ button:hover {
 
 .contentTreatment:hover {
   cursor: initial;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  color: black; }
 
 /*Fin de Tratamientos*/
 /*Familia del Paciente Oncologico*/
 .contentPaciente {
   display: flex;
   flex-direction: column;
+  color: #00608d;
   background: white;
   border: 5px solid #ebebeb;
+  border-radius: 1rem;
   padding: 80px;
   word-spacing: normal;
   transition: all 0.5s ease; }
@@ -244,7 +281,8 @@ button:hover {
 
 .contentPaciente:hover {
   cursor: initial;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  color: black; }
 
 /*Fin de Familia del Paciente Oncologico*/
 /*Nuestras Sedes*/
@@ -253,9 +291,11 @@ button:hover {
   flex-direction: column;
   background: white;
   border: 5px solid #ebebeb;
+  border-radius: 1rem;
   padding: 80px;
   word-spacing: normal;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  color: #00608d; }
   .contentSedes__Subtititles {
     font-size: 1.5rem;
     text-align: left;
@@ -274,6 +314,7 @@ button:hover {
 
 .contentSedes:hover {
   cursor: initial;
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  color: black; }
 
 /*Fin de Nuestras Sedes*/

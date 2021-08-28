@@ -7,13 +7,16 @@
   line-height: 25px;
   background: $color-secundario;
   border: 5px solid $color-bordes;
+  border-radius: 1 * $root-size;
   display: flex;
   flex-direction: column;
   transition: all 0.5s ease;
+  color: $color-primario;
 }
 .NosotrosSection:hover {
   cursor: initial;
   background: $color-hover;
+  color: $color-texto-hover;
 }
 .sidebar {
   padding: 20px;
@@ -21,16 +24,19 @@
   grid-column: span 1;
   background: $color-secundario;
   border: 5px solid $color-bordes;
+  border-radius: 1 * $root-size;
   line-height: 50px;
   margin-bottom: auto;
   margin-right: auto;
   margin-top: 8%;
   transition: all 0.5s ease;
+  color: $color-primario;
 }
 
 .sidebar:hover {
   cursor: initial;
   background: $color-hover;
+  color: $color-texto-hover;
 }
 
 /*Fin de Nosotros*/

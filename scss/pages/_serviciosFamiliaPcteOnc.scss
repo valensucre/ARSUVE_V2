@@ -3,8 +3,10 @@
 .contentPaciente {
   display: flex;
   flex-direction: column;
+  color: $color-primario;
   background: $color-secundario;
   border: 5px solid $color-bordes;
+  border-radius: 1 * $root-size;
   padding: 80px;
   word-spacing: normal;
   transition: all 0.5s ease;
@@ -34,5 +36,6 @@
 .contentPaciente:hover {
   cursor: initial;
   background: $color-hover;
+  color: black;
 }
 /*Fin de Familia del Paciente Oncologico*/

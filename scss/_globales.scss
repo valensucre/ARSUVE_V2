@@ -20,5 +20,9 @@ main {
   font-size: 2rem;
   text-align: center;
   font-style: normal;
+  font-weight: bold;
   padding: 20px;
+  background-color: $color-secundario;
+  border: $color-bordes;
+  border-radius: 1 * $root-size;
 }

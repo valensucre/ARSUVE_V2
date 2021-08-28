@@ -4,6 +4,7 @@
   cursor: pointer;
   background: rgb(0, 85, 130);
   color: white;
+  border-radius: 1 * $root-size;
 }
 
 /*Section 1*/
@@ -17,7 +18,7 @@
   height: 235px;
   background-color: lightgray;
   color: $color-primario;
-  border-radius: 1rem;
+  border-radius: 0.5 * $root-size;
   transition: all 0.5s ease-in;
 }
 .content:hover {
