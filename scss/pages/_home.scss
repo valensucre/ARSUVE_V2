@@ -9,24 +9,38 @@
 
 /*Section 1*/
 
-.content {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  font-weight: bold;
-  align-content: center;
-  padding: 60px;
-  height: 235px;
+.HomeSection {
+  border: 5px solid $color-bordes;
+  padding: 50px;
   background-color: lightgray;
   color: $color-primario;
-  border-radius: 0.5 * $root-size;
+  border-radius: 1.5 * $root-size;
   transition: all 0.5s ease-in;
 }
-.content:hover {
+
+.HomeSection:hover {
   cursor: pointer;
   color: lightgray;
   background-color: $color-primario;
   transform: scale(1);
   font-weight: bold;
+}
+.button {
+  background-color: rgb(2, 125, 182);
+  border: none;
+  color: $color-secundario;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  cursor: pointer;
+  color: $color-primario;
+  background: lightgray;
 }
 
 /*Formulario de Contacto*/

@@ -19,10 +19,38 @@ main {
 .Titles {
   font-size: 2rem;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   font-style: normal;
   font-weight: bold;
   padding: 20px;
-  background-color: $color-secundario;
+  background-color: rgb(89, 182, 89);
   border: $color-bordes;
   border-radius: 1 * $root-size;
+  color: $color-secundario;
+}
+
+.modal-header {
+  background-color: rgb(89, 182, 89);
+  color: $color-secundario;
+}
+.modal-body {
+  background-color: $color-primario;
+  color: $color-secundario;
+}
+.buttonModal {
+  background-color: rgb(89, 182, 89);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+.buttonModal:hover {
+  cursor: pointer;
+  color: rgb(2, 125, 182);
+  background: white;
 }

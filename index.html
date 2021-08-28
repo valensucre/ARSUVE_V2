@@ -104,29 +104,57 @@
       <!--Fin Carrusel -->
 
       <!--Section 1-->
-      <div class="container">
-        <div class="row">
-          <div class="col content mt-4 ms-4">
-            <a href="serviciosQuimioEInmuno.html" class="text-decoration-none">
-              QUIMIOTERAPIA E INMUNOTERAPIA</a
+      <div class="row p-3">
+        <div class="col HomeSection">
+          <ul class="list-unstyled text-center">
+            <h3 class="mb-3 text-center">Quimioterapia e Inmunoterapia</h3>
+
+            <li>Información</li>
+            <li>Frecuencia</li>
+            <li>Administración</li>
+
+            <a href="serviciosQuimioEInmuno.html" class="button mt-2"
+              >Leer Más</a
             >
-          </div>
-          <div class="col content mt-4 ms-4">
-            <a href="serviciosTratamientos.html" class="text-decoration-none">
-              TRATAMIENTOS</a
+          </ul>
+        </div>
+        <div class="col HomeSection">
+          <ul class="list-unstyled text-center">
+            <h3 class="mb-3 text-center">Tratamientos</h3>
+
+            <li class="text-decoration-none">Información</li>
+            <li>Síntomas</li>
+            <li>Terapias</li>
+            <li>Prevención</li>
+
+            <a href="serviciosTratamientos.html" class="button mt-3"
+              >Leer Más</a
             >
-          </div>
-          <div class="col content mt-4 ms-4">
-            <a href="serviciosFamiliaPcteOnc.html" class="text-decoration-none">
-              FAMILIA DEL PACIENTE ONCOLÓGICO</a
+          </ul>
+        </div>
+        <div class="col HomeSection">
+          <ul class="list-unstyled text-center">
+            <h3 class="mb-3 text-center">Familia del Paciente Oncológico</h3>
+            <li>Paciente Oncológico</li>
+            <li>Necesidades del Paciente</li>
+            <li>Terapias de Apoyo</li>
+
+            <a href="serviciosFamiliaPcteOnc.html" class="button mt-2"
+              >Leer Más</a
             >
-          </div>
-          <div class="col content mt-4 ms-4">
-            <a href="#" class="text-decoration-none">TIEMPOS DE COVID-19</a>
-          </div>
+          </ul>
+        </div>
+        <div class="col HomeSection">
+          <ul class="list-unstyled text-center">
+            <h3 class="mb-3 text-center">Tiempos de Covid-19</h3>
+            <li>Paciente Oncológico</li>
+            <li>¿Me puedo vacunar?</li>
+            <li>Medidas y seguridad</li>
+
+            <a href="#" class="button mt-2">Leer Más</a>
+          </ul>
         </div>
       </div>
-
       <!--Fin Section 1-->
 
       <!--Formulario de Contacto-->
@@ -183,8 +211,74 @@
     </main>
     <!--Footer-->
     <footer>
-      <div class="container navbar">Información del Copyright</div>
+      <div class="container navbar">
+        Información del Copyright
+        <!-- Button modal -->
+        <button
+          type="button"
+          class="buttonModal"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Formulario de Contacto
+        </button>
+
+        <!-- Formulario Modal -->
+        <div
+          class="modal fade text-dark"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">CONTÁCTANOS</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              
+                <form class="modal-body container footerForm px-4 py-5">  
+                  <div class="row flex-row mb-4">
+                    <div class="form-group">
+                    <label for="nombre" class="mb-3">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="mb-3">Correo</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Comentarios</label>
+                    <textarea name="message" rows="3" class="form-control"></textarea>
+                  </div>
+                  
+                </div>
+                </form>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="button"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="button">
+                  Enviar Consulta
+                </button>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Fin del Formulario Modal -->
     </footer>
+    <!--Fin del Footer-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
